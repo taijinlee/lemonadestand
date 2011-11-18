@@ -1,7 +1,5 @@
 $test: "{{ constants.domain }}";
 
-header { background:url(//media.#{$test}/img/logo.png) top left no-repeat; height: 225px; }
-
 .header { margin-bottom: 10px; border-top: 5px solid #333333; border-bottom: 1px solid #333333; }
 .header h1 { margin-top: 10px; letter-spacing: -2px; }
 
