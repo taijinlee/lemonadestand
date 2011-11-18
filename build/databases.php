@@ -10,10 +10,10 @@ class databases extends build {
       /* $databases['database']       = array('host' => 'localhost', 'user' => 'nopuku', 'password' => 'nopuku'); */
       /* $databases['sessions']   = array('host' => 'localhost', 'user' => 'nopuku', 'password' => 'nopuku'); */
     } else {
-      $databases['lemonade'] = array('host' => 'localhost', 'user' => 'nopuku', 'password' => 'nopuku');
-      $databases['sessions'] = array('host' => 'localhost', 'user' => 'nopuku', 'password' => 'nopuku');
-      $databases['logs'] = array('host' => 'localhost', 'user' => 'nopuku', 'password' => 'nopuku');
-      $databases['unit_test'] = array('host' => 'localhost', 'user' => 'nopuku', 'password' => 'nopuku');
+      $databases['lemonade'] = array('host' => 'localhost', 'user' => 'lemonade', 'password' => 'lemonade');
+      $databases['lemonade_sessions'] = array('host' => 'localhost', 'user' => 'lemonade', 'password' => 'lemonade');
+      $databases['lemonade_logs'] = array('host' => 'localhost', 'user' => 'lemonade', 'password' => 'lemonade');
+      $databases['unit_test'] = array('host' => 'localhost', 'user' => 'lemonade', 'password' => 'lemonade');
     }
     return $databases;
   }
