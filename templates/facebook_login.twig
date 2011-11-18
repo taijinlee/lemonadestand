@@ -1,0 +1,5 @@
+{% if login_url is defined %}
+  <a id="fb_login" href="{{ login_url }}">Login</a>
+{% else %}
+  <a href="/logout/">Logout</a>
+{% endif %}

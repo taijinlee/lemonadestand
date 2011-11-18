@@ -1,0 +1,14 @@
+{% extends "user_base.twig" %}
+
+{% block main_content %}
+   <h3>What kind of cuisines do you like? (un-check those that don't apply)</h3>
+   
+   {% for cuisine in cuisines %}
+     <input type="checkbox" id="{{ cuisine }}" checked="checked" />
+     <label for="{{ cuisine }}">{{ cuisine }}</label>
+   {% endfor %}
+
+   <a href="http://www.{{ constants.domain }}/dashboard/" class="button">Save Preferences</a>
+
+
+{% endblock %}

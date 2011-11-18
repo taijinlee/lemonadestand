@@ -1,0 +1,14 @@
+{% extends "user_base.twig" %}
+
+{% block main_content %}
+  <label for="who">Who do you want to eat with?</label>
+  <textarea name="unknown" id="who" cols="70" rows="10"></textarea>
+
+  <label for="where">Where do you want to eat?</label>
+  <input type="text" name="where" id="where" value="Palo Alto, CA 95303" size="50" />
+
+  <label for="groupname">What do you want to name the group?</label>
+  <input type="text" name="groupname" id="groupname" value="My Lunch Group" size="50" />
+
+  <a href="//www.{{ constants.domain }}/preferences/" class="button">Go!</a>
+{% endblock %}

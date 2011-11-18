@@ -1,0 +1,17 @@
+$test: "{{ constants.domain }}";
+
+header { background:url(//media.#{$test}/img/logo.png) top left no-repeat; height: 225px; }
+
+.header { margin-bottom: 10px; border-top: 5px solid #333333; border-bottom: 1px solid #333333; }
+.header h1 { margin-top: 10px; letter-spacing: -2px; }
+
+.filter_search { margin-bottom: 10px; border-bottom: 1px solid #333333; }
+.filter_search form, .filter_search form input { margin-bottom: 10px; }
+
+.header ul { margin-top: 30px; }
+.header ul li { float: left; margin-left: 20px; }
+.header ul li a { margin-top: 5px; padding: 5px; font-size: 16px; }
+
+.footer {
+  text-align: center; border-top: 5px solid #000;
+}

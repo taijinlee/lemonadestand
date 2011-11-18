@@ -1,0 +1,41 @@
+{% extends "base.twig" %}
+
+{% block title %}
+  Lunch Meet
+{% endblock %}
+
+{% block body_class %}
+  user
+{% endblock %}
+
+{% block css %}
+  {{ parent() }}
+  <link rel="stylesheet" href="//media.{{ constants.domain }}/css/user/dynamic.css">
+{% endblock %}
+
+{% block js %}
+  {{ parent() }}
+  <script src="//media.{{ constants.domain }}/js/user/base.js"></script>
+{% endblock  %}
+
+{% block content %}
+  <div class="container">
+  
+    <header class="header sixteen columns alpha omega">
+      {% block header %}
+        <h1><a href="//www.{{ constants.domain }}/" title="">Lunch Meet</a></h1>
+      {% endblock %}
+    </header>
+    
+    <div class="content sixteen columns alpha omega">
+      {% block main_content %}{% endblock %}
+    </div>
+    
+    <div class="footer sixteen columns alpha omega">
+      {% block footer %}
+        &copy; {{ "now"|date("Y") }}
+      {% endblock %}
+    </div>
+    
+  </div>
+{% endblock %}
