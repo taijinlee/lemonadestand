@@ -3,7 +3,7 @@ namespace lib\entity;
 
 class referrers extends \lib\entity {
 
-  protected static $database = 'logs';
+  protected static $database = 'lemonade_logs';
   protected static $table = 'referrers';
 
   public static function log() {

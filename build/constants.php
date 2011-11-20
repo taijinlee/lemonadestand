@@ -9,16 +9,17 @@ class constants extends build {
 
     // base hostname
     if ($is_prod) {
-      $params['domain'] = 'rezassured.com';
+      $params['domain'] = 'lemonade.nopuku.com';
     } else {
       $user = trim(`whoami`);
-      $params['domain'] = "{$user}.rezassured.com";
+      $params['domain'] = "{$user}.lemonade.nopuku.com";
     }
 
     // twig configs
     if ($is_prod) {
-      $params['twig_cache_on'] = true;
-      $params['twig_debug_on'] = false;
+      // not using production for now
+      $params['twig_cache_on'] = false;
+      $params['twig_debug_on'] = true;
     } else {
       $params['twig_cache_on'] = false;
       $params['twig_debug_on'] = true;

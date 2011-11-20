@@ -6,8 +6,8 @@ include_once $_SERVER['NP_ROOT'] . '/media/init.php';
 class css extends classes\view_css {
 
   public function run() {
-    $this->add_css_file('css/user/base.css');
-    $this->render_media();
+    // $this->add_media_file('css/user/base.css');
+    // $this->render_media();
   }
 
 }

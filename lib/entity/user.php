@@ -3,7 +3,7 @@ namespace lib\entity;
 
 class user extends \lib\entity {
 
-  protected static $database = 'rez';
+  protected static $database = 'lemonade';
   protected static $table = 'users';
 
 }

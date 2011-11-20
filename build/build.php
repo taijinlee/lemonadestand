@@ -3,7 +3,7 @@ namespace build;
 
 include_once $_SERVER['NP_ROOT'] . '/lib/init-cli.php';
 
-build::all(false);
+build::all(true);
 
 class build {
 

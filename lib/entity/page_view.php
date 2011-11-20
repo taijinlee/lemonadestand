@@ -3,7 +3,7 @@ namespace lib\entity;
 
 class page_view extends \lib\entity {
 
-  protected static $database = 'logs';
+  protected static $database = 'lemonade_logs';
   protected static $table = 'page_views';
 
   public static function log() {

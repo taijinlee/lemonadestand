@@ -1,5 +1,28 @@
 {% extends "user_base.twig" %}
 
 {% block main_content %}
-  Lemonade Stand
+  <div class="house_roof"></div>
+  <div class="house_body">
+    <form method="post" action="">
+      <input type="hidden" name="sell_pricet" id="sell_price" />
+      <input type="hidden" name="num_glasses" id="num_glasses" />
+      <article class="lemonade_price">
+        <dl>
+          <dt>Price per glass: <span id="sell_price_display">0</span>&cent;</dt>
+          <dd><div class="slider" field="sell_price"></div></dd>
+          <dt>How many glasses to make: <span id="num_glasses_display">0</span></dt>
+          <dd><div class="slider" field="num_glasses"></div></dd>
+          <dt class="bully">Buy Bully Protection? ($1.00)</dt>
+          <dd class="bully"><input type="checkbox" name="bully_protection" /></dd>
+        </dl>
+      </article>
+      <article class="weather">
+        Today's Weather
+        <div class="weather_image sunny">Sunny!</div>
+      </article>
+      <div class="submit">
+        <input class="submit orange" type="submit" name="submit" value="Go!" />
+      </div>
+    </form>
+  </div>
 {% endblock %}
