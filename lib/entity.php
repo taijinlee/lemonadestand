@@ -201,7 +201,7 @@ abstract class entity extends attributes {
 
     $attributes = $this->get_attributes();
     $database = new database($class::$database);
-    $res = $database->query("SELECT * FROM `{$class::$table}` WHERE `$field` = " . $this->model['fields'][$this->model['primary_key']['field']] . " $where", $search_keys);
+    $res = $database->query("SELECT * FROM `{$class::$table}` WHERE `$field` = " . $this->model['fields'][$field] . " $where", $search_keys);
     $params = mysql_fetch_assoc($res);
     if (!empty($params)) {
       $this->reset($params);
